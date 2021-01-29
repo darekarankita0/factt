@@ -25,8 +25,8 @@ def facts():
         time.sleep(30)
         #json_object=value.json()
         #return json_object
-        #return render_template('facts.html',value=value)
-        return " {} ".format(value)
+        return render_template('facts.html',value=value)
+        #return " {} ".format(value)
        # return " {} ".format(value)
         #return [(" {} ".format(value)) , render_template('refresh.html')]
         #return " {} ".format(facts())
