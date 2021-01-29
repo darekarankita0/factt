@@ -23,7 +23,9 @@ def facts():
         value=random.choices(dff)
         #print(value)
         time.sleep(30)
-        return render_template('facts.html',value=value)
+        json_object=value.json()
+        return json_object
+        #return render_template('facts.html',value=value)
         #return " {} ".format(value)
        # return " {} ".format(value)
         #return [(" {} ".format(value)) , render_template('refresh.html')]
